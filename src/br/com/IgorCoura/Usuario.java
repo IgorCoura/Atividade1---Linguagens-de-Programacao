@@ -26,6 +26,22 @@ public class Usuario {
         return email;
     }
 
+    public void setCpf(string cpf) {
+        this.cpf = cpf;
+    }
+
+    public void setEmail(string email) {
+        this.email = email;
+    }
+
+    public void setNome(string nome) {
+        this.nome = nome;
+    }
+
+    public void setSenha(string senha) {
+        this.senha = senha;
+    }
+
     @Override
     public String toString() {
         return "Cliente{" +
