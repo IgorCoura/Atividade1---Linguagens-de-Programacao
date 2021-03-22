@@ -1,44 +1,44 @@
 package br.com.IgorCoura;
 
 public class Usuario {
-    private string nome;
-    private string senha;
-    private string cpf;
-    private string email;
+    private String nome;
+    private String senha;
+    private String cpf;
+    private String email;
 
-    public Usuario(string nome, string senha, string cpf, string email) {
+    public Usuario(String nome, String senha, String cpf, String email) {
         this.nome = nome;
         this.senha = senha;
         this.cpf = cpf;
         this.email = email;
     }
 
-    public string getNome(){
+    public String getNome(){
         return nome;
     }
-    public  string getSenha(){
+    public String getSenha(){
         return senha;
     }
-    public string getCpf(){
+    public String getCpf(){
         return cpf;
     }
-    public string getEmail(){
+    public String getEmail(){
         return email;
     }
 
-    public void setCpf(string cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
-    public void setEmail(string email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public void setNome(string nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public void setSenha(string senha) {
+    public void setSenha(String senha) {
         this.senha = senha;
     }
 
