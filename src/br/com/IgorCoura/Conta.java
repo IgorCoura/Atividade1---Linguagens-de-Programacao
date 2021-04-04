@@ -1,3 +1,6 @@
+/**
+ *  @autor Igor de Brito Coura 19.00165-7
+ **/
 package br.com.IgorCoura;
 
 import java.util.List;
@@ -64,27 +67,6 @@ public class Conta {
         }
     }
 
-    public String pagamentoQRcode(String QRcode, List<Conta> contas){
-        String[] dados = QRcode.split(";");
-        int id = Integer.parseInt(dados[0]);
-        Conta contaDestino = null;
-        for(Conta conta : contas){
-            if(conta.getIdConta() == id){
-                contaDestino = conta;
-            }
-        }
-        if(contaDestino != null){
-            if(sacar(Double.parseDouble(dados[2]))){
-                contaDestino.depositar(Double.parseDouble(dados[2]));
-                return "Pagamento realizado com sucesso";
-            }
-            else {
-                return "Saldo insuficiente";
-            }
-        }
-        else {
-            return "Conta inexistente";
-        }
-    }
+
 
 }

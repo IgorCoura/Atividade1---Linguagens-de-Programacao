@@ -1,3 +1,6 @@
+/**
+ *  @autor Igor de Brito Coura 19.00165-7
+ **/
 package br.com.IgorCoura;
 
 public class Usuario {
